@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "FastGet",
+  "version": "1.0",
+  "description": "FastServerのSpigotMCプラグインを簡単に導入できる拡張機能です",
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "https://www.spigotmc.org/resources/*",
+    "http://localhost:4001/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.spigotmc.org/resources/*"
+      ],
+      "js": [
+        "content.js","help.js","lang.js","logo_replace.js"
+      ],
+      "css": [
+        "xpAnimation.css"
+      ]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "xpAnimation.css",
+        "img/spigot.png",
+        "img/yt.png",
+        "img/google.png",
+        "img/info.png",
+        "langs/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+
+  "icons": {
+    "48": "icon.png"
+  }
+}
