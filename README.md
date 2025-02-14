@@ -22,7 +22,7 @@ FastGetはFastServerに追加される予定のLOCAL_APIを使ったテスト拡
 ---
 
 ## 構成
-
+```
    FastGet/
 ├── content.js < これメイン的な
 ├── help.js < 検索ボックスボタン追加
