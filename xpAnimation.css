@@ -1,5 +1,4 @@
-/* xpAnimation.css: XPオーブが弾けるアニメーションを定義 */
-/* xpAnimation.css */
+/* xpAnimation.css: XPオーブが弾けるアニメーション*/
 
 .xp-orb {
     position: fixed;            /* 画面全体に対して固定 */
@@ -12,7 +11,6 @@
     pointer-events: none;
     opacity: 0;
 
-    /* transform, opacity を 1秒かけて変化させる */
     transition: transform 1s ease-out, opacity 1s ease-out;
     z-index: 999999; /* 前面に持ってくる */
 }
@@ -23,7 +21,6 @@
         opacity: 1;
     }
     100% {
-        /* 例: 右上に飛ぶ */
         transform: translate(50px, -50px) scale(0.5);
         opacity: 0;
     }
